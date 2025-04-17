@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Perkalian</title></head>
+<body>
+  <h2>Perkalian</h2>
+  <input type="number" id="a"> x 
+  <input type="number" id="b">
+  <button onclick="kali()">Hitung</button>
+  <p>Hasil: <span id="hasil"></span></p>
+
+  <script>
+    function kali() {
+      let a = document.getElementById('a').value;
+      let b = document.getElementById('b').value;
+      document.getElementById('hasil').innerText = a * b;
+    }
+  </script>
+</body>
+</html>
